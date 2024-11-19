@@ -1,33 +1,10 @@
 <style>
-body {
-    --liberty-brand-color: {{ config.getString('skin.liberty.brand_color_1') || '#4188f1' }};
-    --liberty-brand-dark-color: {{ config.getString('skin.liberty.brand_dark_color_1') || '#214479' }};
-    --liberty-brand-bright-color: {{ config.getString('skin.liberty.brand_bright_color_1') || '#a0c4f8' }};
-    --liberty-navbar-logo-image: {{ config.getString('skin.liberty.navbar_logo_image') || 'none' }};
-    --liberty-navbar-logo-minimum-width: {{ config.getString('skin.liberty.navbar_logo_minimum_width') || '5rem' }};
-    --liberty-navbar-logo-width: {{ config.getString('skin.liberty.navbar_logo_width') || '6.6rem' }};
-    --liberty-navbar-logo-size: {{ config.getString('skin.liberty.navbar_logo_size') || '1.9rem' }};
-    --liberty-navbar-logo-padding: {{ config.getString('skin.liberty.navbar_logo_padding') || '0' }};
-    --liberty-navbar-logo-margin: {{ config.getString('skin.liberty.navbar_logo_margin') || '0' }};
-    --brand-color-1: var(--liberty-brand-color);
-    --brand-color-2: {{ config.getString('skin.liberty.brand_color_2') || 'var(--liberty-brand-color)' }};
-    --brand-bright-color-1: var(--liberty-brand-bright-color);
-    --brand-bright-color-2: {{ config.getString('skin.liberty.brand_bright_color_2') || 'var(--liberty-brand-bright-color)' }};
-    --text-color: '#373a3c';
-    --article-background-color: '#f5f5f5';
-}
-
-body.theseed-dark-mode {
-    --liberty-brand-color: '#2d2f34';
-    --liberty-brand-dark-color: '#16171a';
-    --liberty-brand-bright-color: '#383b40';
-    --brand-color-1: var(--liberty-brand-color);
-    --brand-color-2: var(--liberty-brand-color);
-    --brand-bright-color-1: var(--liberty-brand-bright-color);
-    --brand-bright-color-2: var(--liberty-brand-bright-color);
-    --text-color: '#ddd';
-    --article-background-color: '#000';
-}
+@import "../lib/css/bootstrap.min.css";
+@import "../lib/css/font-awesome.min.css";
+@import "../lib/css/font/Noto Sans KR.css";
+@import "../lib/css/default.css";
+@import '../lib/css/default_mobile.css';
+@import "../lib/css/dark.css";
 </style>
 {% if perms.has('aclgroup') %}
 <style>
@@ -49,7 +26,7 @@ function onClickEditBtn(route) {
 </script>
 <div class="Liberty">
     <div id="top"></div>
-    <link rel="shortcut icon" href="/skins/liberty/static/img/favicon.ico">
+    <link rel="shortcut icon" href="../lib/img/favicon.ico">
     <div class="nav-wrapper">
         <nav class="navbar navbar-dark">
             <a class="navbar-brand" href="/">{{ config.getString('skin.liberty.navbar_logo_text') }}</a>
