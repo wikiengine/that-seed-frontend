@@ -1,0 +1,8 @@
+{
+  "version": {
+    "engine": "4.25.2",
+    "backend": "1.0.0",
+    "frontend": "1.1.0",
+    "skin": "1.0.0"
+  }
+}
