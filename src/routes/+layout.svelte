@@ -10,7 +10,7 @@
 .popper .admin-tool {
     display: block !important;
 }
-</
+</style>
 <script>
 function onClickEditBtn(route) {
     if ($('#editable').css('display') == 'block') {
@@ -101,7 +101,7 @@ function onClickEditBtn(route) {
                             <div class="dropdown-divider"></div>
                             <a href="/member/login?redirect={{ url | url_encode }}" class="dropdown-item">로그인</a>
                         </div>
-                    </di
+                    </div>
             </div>
             <form id="searchform" class="form-inline">
                 <div class="input-group">
