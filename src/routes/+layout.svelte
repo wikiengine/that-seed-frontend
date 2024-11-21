@@ -6,23 +6,12 @@
 @import '../lib/css/default_mobile.css';
 @import "../lib/css/dark.css";
 </style>
-<script>
-function onClickEditBtn(route) {
-    if ($('#editable').css('display') == 'block') {
-        location.href = `/${route}/{{ document|encode_doc }}`;
-    }
-    else {
-        $('#editable').show();
-    }
-    return false;
-}
-</script>
 <div class="Liberty">
     <div id="top"></div>
     <link rel="shortcut icon" href="../lib/img/favicon.ico">
     <div class="nav-wrapper">
         <nav class="navbar navbar-dark">
-            <a class="navbar-brand" href="/">{{ config.getString('skin.liberty.navbar_logo_text') }}</a>
+            <a class="navbar-brand" href="/">뉴시드위키</a>
             <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/RecentChanges"><span class="fa fa-refresh"></span><span class="hide-title">최근 변경</span></a>
