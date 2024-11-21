@@ -57,6 +57,11 @@
             </form>
         </nav>
     </div>
-            <slot>
-            </slot>
+        <div class="title">
+            <h1 id="main_title">
+                <a href="/"><span class="namespace">아 귀찮아</span></a>
+            </h1>
+        </div>
+        <slot>
+        </slot>
 </div>
