@@ -5,7 +5,7 @@ import { resolve } from 'path';
 
 export const GET: RequestHandler = async () => {
   try {
-    const configPath = resolve('src/config/index.json');
+    const configPath = resolve('config/index.json');
     const fileContent = readFileSync(configPath, 'utf-8');
     const data = JSON.parse(fileContent);
 

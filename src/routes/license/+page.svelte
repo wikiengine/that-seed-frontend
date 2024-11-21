@@ -1,6 +1,6 @@
 <template>
   <h1>that seed</h1>
-  <h2>Version: v{engine_v}/h2>
+  <h2>Version: v{engine_v}</h2>
     <ul>
       <li>Backend: v{back_v}</li>
       <li>Frontend: {front_v}</li>

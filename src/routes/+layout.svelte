@@ -57,19 +57,6 @@
             </form>
         </nav>
     </div>
-    <div class="content-wrapper">
-        <div class="liberty-sidebar">
-            <div class="liberty-right-fixed">
-                <div class="live-recent">
-                    <div class="live-recent-header">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="liberty-recent-tab1">최근 변경</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <slot>
+            </slot>
 </div>
