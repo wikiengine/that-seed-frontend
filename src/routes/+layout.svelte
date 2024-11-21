@@ -57,47 +57,6 @@ function onClickEditBtn(route) {
                     </div>
                 </li>
             </ul>
-            <div class="navbar-login">
-                    <div class="dropdown login-menu">
-                        <a id="login-menu" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="profile-img" src="{{ member|avatar_url }}">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right login-dropdown-menu" aria-labelledby="login-menu">
-                            <div class="username dropdown-item">
-                                <b>{{ member.username }}</b><br>Member
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <a href="/settings" class="dropdown-item">설정</a>
-                            <a id="theme" href="#" class="dropdown-item">다크 테마로</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="/member/mypage" class="dropdown-item">내 정보</a>
-                            <a href="/w/{{ member.username | encode_userdoc }}" class="dropdown-item">내 사용자 문서</a>
-                            <a href="/member/starred_documents" class="dropdown-item">내 문서함</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/contribution/author/{{ member.username }}/document">내 문서 기여 목록</a>
-                            <a class="dropdown-item" href="/contribution/author/{{ member.username }}/discuss">내 토론 기여 목록</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="/member/logout?redirect={{ url | url_encode }}" class="dropdown-item">로그아웃</a>
-                        </div>
-                    </div>
-                    <div class="dropdown login-menu">
-                        <a id="login-menu" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fa fa-user"></span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right login-dropdown-menu">
-                            <div class="username dropdown-item">
-                                <b>{{ req_ip }}</b><br>Please login!
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <a id="theme" href="#" class="dropdown-item">다크 테마로</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="/contribution/ip/{{ req_ip }}/document" class="dropdown-item">내 문서 기여 목록</a>
-                            <a href="/contribution/ip/{{ req_ip }}/discuss" class="dropdown-item">내 토론 기여 목록</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="/member/login?redirect={{ url | url_encode }}" class="dropdown-item">로그인</a>
-                        </div>
-                    </div>
-            </div>
             <form id="searchform" class="form-inline">
                 <div class="input-group">
                     <input type="search" name="q" placeholder="검색" accesskey="f" class="form-control" id="searchInput" autocomplete="off">
@@ -119,23 +78,6 @@ function onClickEditBtn(route) {
                                 <a class="nav-link active" id="liberty-recent-tab1">최근 변경</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="live-recent-content">
-                        <ul class="live-recent-list" id="live-recent-list">
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                            <li><span class="recent-item">&nbsp;</span></li>
-                        </ul>
-                    </div>
-                    <div class="live-recent-footer">
-                        <a href="/RecentChanges" title="최근 변경내역"><span class="label label-info">더 보기</span></a>
                     </div>
                 </div>
             </div>
