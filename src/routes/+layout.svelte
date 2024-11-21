@@ -6,11 +6,6 @@
 @import '../lib/css/default_mobile.css';
 @import "../lib/css/dark.css";
 </style>
-<style>
-.popper .admin-tool {
-    display: block !important;
-}
-</style>
 <script>
 function onClickEditBtn(route) {
     if ($('#editable').css('display') == 'block') {
