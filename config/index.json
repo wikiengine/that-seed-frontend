@@ -4,5 +4,6 @@
     "backend": "1.0.0",
     "frontend": "1.1.0",
     "skin": "1.0.0"
-  }
+  },
+  "frontpage": "FrontPage"
 }

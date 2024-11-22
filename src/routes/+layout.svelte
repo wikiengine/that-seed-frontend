@@ -5,7 +5,10 @@
     @import "../lib/css/default.css";
     @import '../lib/css/default_mobile.css';
     @import "../lib/css/dark.css";
-    </style>
+</style>
+<script>
+import { title, namespace } from "../store/document";
+</script>
     <div class="Liberty">
         <div id="top"></div>
         <link rel="shortcut icon" href="../lib/img/favicon.ico">
@@ -59,7 +62,7 @@
         </div>
             <div class="title">
                 <h1 id="main_title">
-                    <p class="namespace">아 귀찮아</p>
+                    <span class="namespace">{$namespace}:</span>{$title}
                 </h1>
             </div>
         </div>
